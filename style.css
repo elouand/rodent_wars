@@ -1,0 +1,117 @@
+body{
+  background-image: url("/ressources/background.png");
+     background-repeat: repeat;
+  display:flex; 
+  align-content: center;
+  justify-content: center;
+  overflow:scroll;
+  overscroll-behavior-x: none;
+  flex-direction: column;
+}
+
+
+
+
+.homepageUI {
+    display: flex; /* Corrected */
+    flex-direction: column;
+    align-items: center; /* Added */
+    justify-content: space-around; /* Added */
+    height: 100%;
+    width: 100%;
+}
+
+.topBar{
+      display: flex; /* Corrected */
+    flex-direction: row;
+    align-items: center; /* Added */
+    background-color:black;
+    border: solid aliceblue 3px;
+    border-radius: 12px;
+    height: 10vh;
+    width: 100vw;
+}
+
+
+.gameListDiv {
+    display: flex; /* Corrected */
+    flex-direction: column;
+    align-items: center; /* Added */
+    background-color:black;
+    border: solid aliceblue 3px;
+    border-radius: 12px;
+    height: 70vh;
+    width: 40vw;
+    margin-top:10vh;
+}
+
+
+.gameListDivTitle{
+    font-size: 5vh;
+    align-self:flex-start;
+    margin-top: 2vh;
+    flex:1;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:aliceblue;
+    background-color:indigo;
+    border:3px solid aliceblue;
+    border-radius: 10cm;
+    user-select: none;
+    align-self: center;
+    width:50%;
+    height:10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.gameList{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y:scroll;
+    flex:5;
+    width:80%;
+    justify-self: center;
+    padding-top: 5%;
+    
+
+}
+
+.gameListElem{
+    height: 10%;
+    width:100%;
+    background-color: indigo;
+    border:2px solid aliceblue;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-evenly;
+    margin-top:5%;
+}
+
+.gameListElem p{
+    height:100%;
+    align-content: center;
+    font-size: 150%;
+    color:aliceblue;
+    user-select: none;
+
+}
+
+.gameListElem button{
+    transition: 0.2s ease-in-out;
+    align-self: center;
+    height:80%;
+    background-color: black;
+    color:aliceblue;
+    border-radius: 5px;
+}
+
+.gameListElem button:hover{
+    height:85%;
+    background-color: aliceblue;
+    color:indigo;
+}
