@@ -2,7 +2,7 @@
 
     "0":{
         "name": "Mouse",
-        "image":"player0.png",
+        "image":"mouse.png",
         "attack":1,
         "hp":2,
         "movement":1,
