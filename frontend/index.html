@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="/fichier/CardGestion.js"></script>
+    <script src="/fichier/Client.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/fichier/style.css">
+    <title>RongeurApocalypse 2</title>
+</head>
+
+<body>
+
+<div id="test">
+     
+</div>
+
+
+
+
+    <div id="homepageUI" class="homepageUI">
+        <div class="topBar" id="topBar">
+            
+            
+
+            <div class="loginDiv" id="loginDiv">      
+                <input type="text" id="username" placeholder="username">
+                <input type="password" id="password" placeholder="passworld">
+                <div class="bottomLogin" id="bottomLogin">
+                    <button onclick="login()">log in!</button>
+                    <button onclick="signUp()">Sign up!</button>
+                    <button onclick="loginAnonymous()">Anonymous</button>
+                </div>
+            </div>    
+            <button class="topBarButton" id="cardsButton" onclick="changeTab(this)">Cards</button>
+            <button class="topBarButton" id="decksButton" onclick="changeTab(this)">Decks</button>
+            <button class="topBarSelectedButton" id="gameListButton" onclick="changeTab(this)">Games</button>
+        </div>
+
+
+
+        <div class="gameListDiv" id="gameListDiv">
+            <h3 class="gameListDivTitle">Join a game</h3>
+            <div id="gameList" class="gameList">
+
+
+            </div>
+        </div>
+
+        <div class="decksDiv" id="decksDiv">
+            <div class="decksTopDiv" id="decksTopDiv">
+               
+            </div>   
+
+        </div>
+
+        <div class="cardsDiv" id="cardsDiv">
+            <h3 class="gameListDivTitle">Cards</h3>
+           
+        </div>
+
+
+    </div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,368 @@
+body{
+  background-image: url("/ressources/background.png");
+     background-repeat: repeat;
+  display:flex; 
+  align-content: center;
+  justify-content: center;
+  overflow:scroll;
+  overscroll-behavior-x: none;
+  flex-direction: column;
+}
+
+
+
+
+.homepageUI {
+    display: flex; /* Corrected */
+    flex-direction: column;
+    align-items: center; /* Added */
+    justify-content: space-around; /* Added */
+    height: 100%;
+    width: 100%;
+}
+
+.topBar{
+      display: flex; /* Corrected */
+    flex-direction: row-reverse;
+    align-items: center; /* Added */
+    justify-content: space-around;
+    background-color:black;
+    border: solid aliceblue 3px;
+    border-radius: 12px;
+    height: 10vh;
+    width: 100vw;
+}
+
+.loginDiv{
+    display:flex;
+    flex-direction:column;
+    height:90%;
+    width:15%;
+    justify-content: center;
+    align-items: center;
+    margin-right:5%;
+}
+
+.loginDiv input{
+    height:30%;
+    width:75%;
+    align-items: center;
+    justify-content: center;
+    background-color: aliceblue;
+}
+.bottomLogin button{
+    height:100%;
+    font-size: 70%;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color:aliceblue;
+    border-radius: 10px;
+    transition: 0.3s ease-in-out
+}
+
+.loginDiv p{
+    height:100%;
+    font-size: 150%;
+    align-items: center;
+    justify-content: center;
+    color:aliceblue;
+}
+
+
+.bottomLogin button:hover{
+    background-color: aliceblue;
+    color:indigo;
+}
+
+.bottomLogin{
+    flex-direction: row;
+
+
+}
+
+.topBarSelectedButton{
+     font-size: 5vh;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:aliceblue;
+    background-color:indigo;
+    border:3px solid aliceblue;
+    border-radius: 10cm;
+    user-select: none;
+    width:12%;
+    height:85%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition:0.3s ease-in-out
+}
+.topBarButton{
+     font-size: 5vh;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:aliceblue;
+    background-color:black;
+    border:3px solid aliceblue;
+    border-radius: 10cm;
+    user-select: none;
+    width:12%;
+    height:85%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition:0.3s ease-in-out
+
+}
+.topBarButton:hover{
+    background-color: indigo;
+}
+
+
+
+
+.gameListDiv {
+    display: flex; /* Corrected */
+    flex-direction: column;
+    align-items: center; /* Added */
+    background-color:black;
+    border: solid aliceblue 3px;
+    border-radius: 12px;
+    height: 70vh;
+    width: 40vw;
+    margin-top:10vh;
+}
+
+
+.gameListDivTitle{
+    font-size: 5vh;
+    align-self:flex-start;
+    margin-top: 2vh;
+    flex:1;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:aliceblue;
+    background-color:indigo;
+    border:3px solid aliceblue;
+    border-radius: 10cm;
+    user-select: none;
+    align-self: center;
+    width:50%;
+    height:10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.gameList{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y:scroll;
+    flex:5;
+    width:80%;
+    justify-self: center;
+    padding-top: 5%;
+    
+
+}
+
+.gameListElem{
+    height: 10%;
+    width:100%;
+    background-color: indigo;
+    border:2px solid aliceblue;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-evenly;
+    margin-top:5%;
+}
+
+.gameListElem p{
+    height:100%;
+    align-content: center;
+    font-size: 150%;
+    color:aliceblue;
+    user-select: none;
+
+}
+
+.gameListElem button{
+    transition: 0.2s ease-in-out;
+    align-self: center;
+    height:80%;
+    background-color: black;
+    color:aliceblue;
+    border-radius: 5px;
+}
+
+.gameListElem button:hover{
+    height:85%;
+    background-color: aliceblue;
+    color:indigo;
+} 
+
+.decksDiv{
+    display: none; /* Corrected */
+    flex-direction: column;
+    align-items: center; /* Added */
+    background-color:black;
+    border: solid aliceblue 3px;
+    border-radius: 12px;
+    height: 80vh;
+    width: 70vw;
+    margin-top:10vh;
+}
+
+.decksTopDiv{
+    display: flex; 
+    flex-direction: row;
+    overflow: scroll;
+    align-items:center;
+    justify-content: flex-start; 
+
+    background-color:indigo;
+    border: solid aliceblue 3px;
+    border-radius: 12px;
+    height: 17%;
+    width: 90%;
+    margin-top:3%;
+}
+
+.decksTopDivElem{
+  display: flex; 
+  flex: 0 0 15%;
+  margin-left: 5%;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+    background-color:black;
+    border: solid aliceblue 3px;
+    border-radius: 12px;
+    height: 90%;
+    cursor:pointer;
+}
+
+.decksTopDivElem p{
+    align-items: center;
+    justify-content: center;
+    color:aliceblue;
+    display:flex;
+    width:100%;
+    user-select: none;
+    height:15%;
+}
+
+.decksTopDivElem img{
+user-select: none;
+    height:60%;
+}
+
+ .card-container {
+      width: 120px; /* Just change this value to resize */
+    }
+
+    .card {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 2 / 3;
+      border-radius: 1em;
+      background: linear-gradient(#f0f8ff, #504b49);
+      border: 0.2em solid darkslategrey;
+      box-shadow: 0 0.4em 0.8em rgba(0, 0, 0, 0.4);
+      padding: 0.5em;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      user-select: none;
+    }
+    
+
+    .mana {
+      position: absolute;
+      top: -0.4em;
+      left: -0.4em;
+      width: 2em;
+      height: 2em;
+      background: #33bde3;
+      color: white;
+      font-size: 1em;
+      font-weight: bold;
+      text-align: center;
+      line-height: 2em;
+      border-radius: 50%;
+      border: 0.1em solid white;
+      box-shadow: 0 0 0.2em black;
+    }
+
+    .hp {
+      position: absolute;
+      top: -0.4em;
+      right: -0.4em;
+      width: 2em;
+      height: 2em;
+      color: white;
+      font-size: 1em;
+      font-weight: bold;
+      text-align: center;
+      line-height: 1.5em;
+  background-image: url("/ressources/heart.png");
+     background-size:contain;
+     background-repeat: no-repeat;
+    }
+
+    .card-name {
+      text-align: center;
+      font-size: 1em;
+      font-weight: bold;
+      margin-top: 0.5em;
+      color: #3b2419;
+      text-shadow: 0.05em 0.05em #fff;
+    }
+
+    .card-image {
+      margin: 0.5em auto;
+      width: 90%;
+      height: 35%;
+      background: #ccc center/cover no-repeat;
+      border-radius: 0.5em;
+      border: 0.1em solid #6e4f33;
+      background-size: contain;
+    }
+
+    .card-description {
+      flex: 1;
+      font-size: 0.8em;
+      text-align: center;
+      padding: 0.5em;
+      background: rgba(255,255,255,0.7);
+      color: #333;
+      border-radius: 0.5em;
+    }
+
+    .stats {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 0.5em;
+    }
+
+    .stat {
+      width: 1.8em;
+      height: 1.8em;
+      border-radius: 50%;
+      font-size: 0.9em;
+      font-weight: bold;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 0.1em solid white;
+    }
+
+    .attack {
+      background: #9a1203;
+    }
+
+    .movement {
+      background: #27ae60;
+    }

@@ -1,0 +1,29 @@
+{
+
+    "0":{
+        "name": "Mouse",
+        "image":"player0.png",
+        "attack":1,
+        "hp":2,
+        "movement":1,
+        "cost":1,
+        "description": "A small rodent with a big bite.",
+        "attributes":null,
+        "colorPalette":0
+    },
+    "1":{
+        "name": "Hamster",
+        "image":"player5.png",
+        "attack":3,
+        "hp":1,
+        "movement":1,
+        "cost":1,
+        "description": "There is no ham.",
+        "attributes":null,
+        "colorPalette":0
+
+    }
+
+
+
+}
